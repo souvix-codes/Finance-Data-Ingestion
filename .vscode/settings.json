@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "ebvag4avcn.t7h26cocnc.tsdb.cloud.timescale.com",
+            "port": 31241,
+            "askForPassword": true,
+            "sshOptions": {
+                "port": 22
+            },
+            "driver": "PostgreSQL",
+            "name": "Tiger Cloud Finance DB",
+            "database": "tsdb",
+            "username": "tsdbadmin"
+        }
+    ]
+}

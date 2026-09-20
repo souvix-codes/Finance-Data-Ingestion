@@ -1,0 +1,5 @@
+.env
+tiger-cloud-*-credentials.env
+__pycache__/
+.pytest_cache/
+.venv/
