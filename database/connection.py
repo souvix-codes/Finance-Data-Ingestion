@@ -18,11 +18,11 @@ def get_connection() -> psycopg.Connection:
         except Exception:
             pass
 
-    dbname = os.getenv("TSDB_NAME") or os.getenv("TIGERDB_NAME") or "tsdb"
-    host = os.getenv("TSDB_HOST") or os.getenv("TIGERDB_HOST")
-    user = os.getenv("TSDB_USER") or os.getenv("TIGERDB_USER") or "tsdbadmin"
-    password = os.getenv("TSDB_PASSWORD") or os.getenv("TIGERDB_PASSWORD")
-    port = os.getenv("TSDB_PORT") or os.getenv("TIGERDB_PORT") or "5432"
+    dbname = os.getenv("TSDB_NAME")
+    host = os.getenv("TSDB_HOST")
+    user = os.getenv("TSDB_USER") 
+    password = os.getenv("TSDB_PASSWORD")
+    port = os.getenv("TSDB_PORT") 
 
     if not host:
         raise RuntimeError("No Tiger Cloud host is configured in the project .env file.")
