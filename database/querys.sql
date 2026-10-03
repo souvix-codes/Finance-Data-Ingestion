@@ -1,0 +1,3 @@
+SELECT * FROM crypto_ticks
+ORDER BY time DESC
+LIMIT 500;
